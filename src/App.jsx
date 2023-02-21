@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+// Styles
+import "./App.css";
+import styles from "./assets/styles/headings.module.css";
+
+// Fonts
+import "./assets/fonts/HankenGrotesk-Medium.ttf";
+import "./assets/fonts/HankenGrotesk-Bold.ttf";
+import "./assets/fonts/HankenGrotesk-ExtraBold.ttf";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
+    <div>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <p>Your Result</p>
+        <span>76 of 100</span>
+
+        <h1>Great</h1>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div>
+        <h2> Summary</h2>
+
+        <div>Reaction 80 / 100</div>
+
+        <div>Memory 92 / 100</div>
+
+        <div>Verbal 61 / 100</div>
+
+        <div>Visual 72 / 100</div>
+
+        <button>Continue</button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
