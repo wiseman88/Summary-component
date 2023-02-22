@@ -16,10 +16,6 @@
     url("./assets//fonts/HankenGrotesk-ExtraBold.ttf") format("truetype");
 }
 
-* {
-  font-family: "Medium", serif;
-}
-
 html,
 body,
 div,
@@ -105,7 +101,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -148,4 +143,9 @@ table {
 button {
   background-color: transparent;
   border: none;
+}
+
+* {
+  font-family: "Medium", serif;
+  font-size: 18px;
 }
