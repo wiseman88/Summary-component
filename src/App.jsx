@@ -1,5 +1,4 @@
 // Styles
-import "./App.css";
 import styles from "./assets/styles/headings.module.css";
 
 // Fonts
