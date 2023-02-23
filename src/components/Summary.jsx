@@ -7,7 +7,7 @@ const Summary = () => {
 
       <div className={`${summary.block} ${summary["error-block"]}`}>
         <div className={summary.title}>
-          <img src="/src/assets/images/icon-reaction.svg" alt="reaction" />
+          <img src="/public/images/icon-reaction.svg" alt="reaction" />
           <span>Reaction</span>
         </div>
         <span className={summary.points}>
@@ -17,7 +17,7 @@ const Summary = () => {
 
       <div className={`${summary.block} ${summary["warning-block"]}`}>
         <div className={summary.title}>
-          <img src="/src/assets/images/icon-memory.svg" alt="memory" />
+          <img src="/public/images/icon-memory.svg" alt="memory" />
           <span>Memory</span>
         </div>
         <span className={summary.points}>
@@ -27,7 +27,7 @@ const Summary = () => {
 
       <div className={`${summary.block} ${summary["success-block"]}`}>
         <div className={summary.title}>
-          <img src="/src/assets/images/icon-verbal.svg" alt="verbal" />
+          <img src="/public/images/icon-verbal.svg" alt="verbal" />
           <span>Verbal</span>
         </div>
         <span className={summary.points}>
@@ -37,7 +37,7 @@ const Summary = () => {
 
       <div className={`${summary.block} ${summary["primary-block"]}`}>
         <div className={summary.title}>
-          <img src="/src/assets/images/icon-visual.svg" alt="visual" />
+          <img src="/public/images/icon-visual.svg" alt="visual" />
           <span>Visual</span>
         </div>
         <span className={summary.points}>
