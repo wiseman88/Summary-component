@@ -144,7 +144,10 @@ button {
   border: none;
 }
 
-* {
+body {
   font-family: "Medium", serif;
+}
+
+* {
   font-size: 18px;
 }

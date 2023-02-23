@@ -1,17 +1,51 @@
+import summary from "../assets/styles/summary.module.css";
+
 const Summary = () => {
   return (
-    <div>
+    <div className={summary.summary}>
       <h2> Summary</h2>
 
-      <div>Reaction 80 / 100</div>
+      <div className={`${summary.block} ${summary["error-block"]}`}>
+        <div className={summary.title}>
+          <img src="/src/assets/images/icon-reaction.svg" alt="reaction" />
+          <span>Reaction</span>
+        </div>
+        <span className={summary.points}>
+          <span className={summary.total}>80</span> / 100
+        </span>
+      </div>
 
-      <div>Memory 92 / 100</div>
+      <div className={`${summary.block} ${summary["warning-block"]}`}>
+        <div className={summary.title}>
+          <img src="/src/assets/images/icon-memory.svg" alt="memory" />
+          <span>Memory</span>
+        </div>
+        <span className={summary.points}>
+          <span className={summary.total}>92</span> / 100
+        </span>
+      </div>
 
-      <div>Verbal 61 / 100</div>
+      <div className={`${summary.block} ${summary["success-block"]}`}>
+        <div className={summary.title}>
+          <img src="/src/assets/images/icon-verbal.svg" alt="verbal" />
+          <span>Verbal</span>
+        </div>
+        <span className={summary.points}>
+          <span className={summary.total}>61</span> / 100
+        </span>
+      </div>
 
-      <div>Visual 72 / 100</div>
+      <div className={`${summary.block} ${summary["primary-block"]}`}>
+        <div className={summary.title}>
+          <img src="/src/assets/images/icon-visual.svg" alt="visual" />
+          <span>Visual</span>
+        </div>
+        <span className={summary.points}>
+          <span className={summary.total}>72</span> / 100
+        </span>
+      </div>
 
-      <button>Continue</button>
+      <button className={summary.btn}>Continue</button>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 // Styles
-import styles from "./assets/styles/headings.module.css";
+import app from "./assets/styles/app.module.css";
 
 // Fonts
 import "./assets/fonts/HankenGrotesk-Medium.ttf";
@@ -10,7 +10,7 @@ import Summary from "./components/Summary";
 
 function App() {
   return (
-    <div>
+    <div className={app.container}>
       <Result />
       <Summary />
     </div>
