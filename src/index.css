@@ -145,9 +145,18 @@ button {
 }
 
 body {
+  min-height: 100vh;
   font-family: "Medium", serif;
 }
 
 * {
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

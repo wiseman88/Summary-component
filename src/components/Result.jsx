@@ -5,7 +5,9 @@ const Result = () => {
     <div className={result.result}>
       <h3>Your Result</h3>
       <div className={result.circle}>
-        <p>76</p> <span>of 100</span>
+        <div>
+          <p>76</p> <span>of 100</span>
+        </div>
       </div>
 
       <div className={result.text}>
