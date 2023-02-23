@@ -83,4 +83,29 @@
   font-family: "Bold", serif;
   font-size: 16px;
   border-radius: 28px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+}
+
+@media (min-width: 768px) {
+  .summary {
+    margin-top: 0;
+    padding-top: 42px;
+  }
+
+  .summary h2 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .summary .block:last-of-type {
+    margin-bottom: 40px;
+  }
 }
