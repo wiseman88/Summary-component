@@ -66,6 +66,7 @@
 
 @media (min-width: 768px) {
   .result {
+    flex: none;
     width: 368px;
     padding-top: 42px;
     border-top-left-radius: 31px;
@@ -74,7 +75,7 @@
 
   .result h3 {
     padding-bottom: 38px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .circle {
