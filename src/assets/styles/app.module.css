@@ -3,7 +3,7 @@
   height: 809px;
   margin: 0 auto;
   background-color: white;
-  box-shadow: 0px 3px 23px 3px hsl(234, 35%, 90%);
+  box-shadow: 0px 16px 28px 1px hsl(234, 35%, 90%);
 }
 
 @media (min-width: 768px) {

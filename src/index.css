@@ -145,7 +145,6 @@ button {
 }
 
 body {
-  min-height: 100vh;
   font-family: "Medium", serif;
 }
 
@@ -155,8 +154,6 @@ body {
 
 @media (min-width: 768px) {
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 284px;
   }
 }
