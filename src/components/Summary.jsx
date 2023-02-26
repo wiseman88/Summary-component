@@ -1,11 +1,18 @@
+import { useState } from "react";
+import Data from "../features/data.json";
 import summary from "../assets/styles/summary.module.css";
+import Block from "./Block";
 
 const Summary = () => {
+  const [data, setData] = useState(Data);
+
   return (
     <div className={summary.summary}>
       <h2> Summary</h2>
-
-      <div className={`${summary.block} ${summary["error-block"]}`}>
+      {data.map((block, index) => (
+        <Block key={index} block={block} />
+      ))}
+      {/* <div className={`${summary.block} ${summary["error-block"]}`}>
         <div className={summary.title}>
           <img src="/images/icon-reaction.svg" alt="reaction" />
           <span>Reaction</span>
@@ -43,7 +50,7 @@ const Summary = () => {
         <span className={summary.points}>
           <span className={summary.total}>72</span> / 100
         </span>
-      </div>
+      </div> */}
 
       <button className={summary.btn}>Continue</button>
     </div>
